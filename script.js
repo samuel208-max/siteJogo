@@ -58,3 +58,11 @@ document.addEventListener("DOMContentLoaded", () => {
         campoGastar.value = "0";
     });
 });
+
+const dinheiroExtraButton = document.getElementById("dinheiroExtra");
+const dinheiroInput = document.getElementById("dinheiro");
+
+dinheiroExtraButton.addEventListener("click", () => {
+    let atual = parseInt(dinheiroInput.value) || 0;
+    dinheiroInput.value = atual + 500; // Adiciona 500 ao dinheiro atual
+});

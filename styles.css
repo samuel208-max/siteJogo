@@ -159,7 +159,7 @@
         color: #000;
     }
 
-    #adicionarGasolina button {
+    #adicionarGasolina #adicionar {
         background-color: #8000ff;
         color: #000;
         border: none;
@@ -206,6 +206,20 @@
         flex-direction: row;
         gap: 1rem;
         margin-top: 10px;
+    }
+
+    #dinheiroExtra {
+        position: fixed;
+        right: 20px;
+        background-color: #8000ff;
+        border: none;
+        padding: 20px;
+        font-size: 30px;
+        border-radius: 50%;
+        font-weight: bold;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+        transition: background-color 0.3s, transform 0.2s;
+        z-index: 1000;
     }
 
     /* Regras do jogo */
