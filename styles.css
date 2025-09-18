@@ -134,6 +134,80 @@
         box-shadow: 0 0 5px #a64dff;
     }
 
+    .botoes-gasto {
+        display: flex;
+        flex-direction: row;
+        gap: 0.8rem;
+        padding: 20px 0;
+    }
+
+    .botoes-gasto button {
+        flex: 1;
+        /* Faz todos os botões terem largura igual */
+        padding: 0.8rem 0;
+        border: 1px solid #8000ff;
+        border-radius: 5px;
+        background-color: #111;
+        color: #8000ff;
+        font-weight: bold;
+        transition: background-color 0.3s, color 0.3s;
+        text-align: center;
+    }
+
+    .botoes-gasto button:hover {
+        background-color: #8000ff;
+        color: #000;
+    }
+
+    #adicionarGasolina button {
+        background-color: #8000ff;
+        color: #000;
+        border: none;
+        padding: 0.8rem;
+        font-size: 20px;
+        border-radius: 10px;
+        font-weight: bold;
+        width: fit-content;
+        margin-top: 1rem;
+        transition: background-color 0.3s;
+    }
+
+    #adicionarGasolina button:hover {
+        background-color: #a64dff;
+        cursor: pointer;
+    }
+
+    #adicionarGasolina #campoOculto {
+        margin-top: 1rem;
+        display: none;
+        flex-direction: column;
+        margin-top: 40px;
+        gap: 1rem;
+        padding: 20px;
+        background-color: #111;
+        border: 1px solid #8000ff;
+        border-radius: 10px;
+    }
+
+    #adicionarGasolina #campoOculto label {
+        font-size: 17px;
+        color: #aaa;
+    }
+
+    #adicionarGasolina #campoOculto input[type="number"] {
+        width: 80%;
+        font-size: 16px;
+        padding: 0.5rem;
+        border-radius: 10px;
+    }
+
+    #adicionarGasolina #botoesConfirmar {
+        display: flex;
+        flex-direction: row;
+        gap: 1rem;
+        margin-top: 10px;
+    }
+
     /* Regras do jogo */
     ul {
         list-style: none;
