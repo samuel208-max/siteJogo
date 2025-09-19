@@ -208,6 +208,24 @@
         margin-top: 10px;
     }
 
+    #adicionarGasolina #botoesConfirmar #botaoConfirmar {
+        background-color: #00cc00;
+        color: #000;
+        border: none;
+        padding: 0.8rem;
+        font-size: 18px;
+        border-radius: 10px;
+        font-weight: bold;
+        flex: 1;
+        /* Faz o botão ocupar todo o espaço disponível */
+        transition: background-color 0.3s;
+    }
+
+    #adicionarGasolina #botoesConfirmar #botaoConfirmar:hover {
+        background-color: #33ff33;
+        cursor: pointer;
+    }
+
     #dinheiroExtra {
         position: fixed;
         right: 20px;
@@ -284,4 +302,49 @@
         left: 0;
         font-size: 0.8rem;
     }
+}
+
+#roleta {
+    text-align: center;
+    margin: 2rem 0;
+}
+
+#roleta h1 {
+    color: #fff;
+    margin-bottom: 1rem;
+}
+
+.roleta-container {
+    position: relative;
+    display: inline-block;
+}
+
+#canvasRoleta {
+    border: 4px solid #8000ff;
+    border-radius: 50%;
+    background-color: #111;
+}
+
+#girarRoleta {
+    margin-top: 1rem;
+    padding: 0.8rem 1.5rem;
+    background-color: #8000ff;
+    color: #fff;
+    border: none;
+    border-radius: 10px;
+    font-weight: bold;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+#girarRoleta:hover {
+    background-color: #a64dff;
+}
+
+#resultado {
+    margin-top: 1rem;
+    color: #fff;
+    font-size: 1.2rem;
+    font-weight: bold;
 }
